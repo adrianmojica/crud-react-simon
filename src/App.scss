@@ -1,0 +1,202 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+
+body {
+  background: #281D4C;
+  color: #281D4C;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.btn {
+  border-radius: 0px;
+}
+
+h4, h5 {
+  font-weight: 600;
+}
+
+.App {
+  text-align: center;
+  height:100%;
+}
+
+#mainContainer {
+  background-color: white;
+  margin-top:30px;
+  border-radius: 5px;
+  min-height: 570px;
+}
+
+#searchbar-customers, #searchbar-templates {
+  margin-bottom:30px;
+}
+
+
+.edit-form {
+  padding-top: 30px;
+}
+
+.template-list, .customer-list {
+  max-height: 300px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+.btn-in-list {
+    margin: 10px;
+}
+
+.edit-form {
+  text-align: left;
+  h4 {
+    margin-left: 26px;
+    margin-bottom: 20px;
+  }
+}
+
+#formContainerAdd{
+  text-align: left;
+  background-color: white;
+  margin-top:30px;
+  h4 {
+    font-weight: 600;
+    margin-left: 16px;
+    margin-top: 20px;
+  }
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+  label {
+    margin-top: 10px;
+  }
+  button {
+    margin-top: 20px;
+  }
+}
+
+
+#templateList, #customerList {
+  .title {
+    text-align: center;
+    margin-bottom:10px;
+  }
+}
+
+.list {
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 150px;
+}
+
+.logo {
+  margin-top: 0px;
+  width: 50px;
+}
+
+#form-card {
+  margin-top:30px;
+  margin-bottom: 40px;
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #757575;
+    opacity: 1; /* Firefox */
+  }
+  h5{
+    color: #281D4C;
+    margin-top: 0px;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  .card-header,.input-group-text {
+    background-color: #E2E9EE;
+  }
+  select{
+    color:#757575;;
+  }
+  label {
+    color:#281D4C
+  }
+  .selector{
+    margin-top: 10px;
+  }
+  .btn-success {
+    color: #fff;
+    background-color: #D8276C;
+    border-color: #D8276C;
+    border-radius: 1px;
+    text-transform: uppercase;
+    &:hover{
+      background-color: #281D4C;
+      border-color: #281D4C;
+    }
+  }
+  
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #D8276C;
+  border-color: #D8276C;
+  border-radius: 1px;
+  text-transform: uppercase;
+  &:hover{
+    background-color: #281D4C;
+    border-color: #281D4C;
+  }
+}
+
+.btn-secondary {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #757575;
+  border-color: #757575;
+  border-radius: 1px;
+}
+
+#config-form {
+  text-align: left;
+  button {
+    margin-top: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

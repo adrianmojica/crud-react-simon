@@ -1,0 +1,158 @@
+{
+  "templates": [
+    {
+      "id": 2,
+      "name": "Purchase Thank-You Template",
+      "description": "Thank customer purchase",
+      "content": "<p>Dear {{customer.firstname}} {{customer.lastname}},</p>\n\n<p>Thank you for your recent order! You've purchased:</p><ul>{{products}}</ul>"
+    },
+    {
+      "id": 3,
+      "name": "Purchase Thank-You Template",
+      "description": "Thank customer purchase",
+      "content": "<p>Dear {{customer.firstname}} {{customer.lastname}},</p>\n\n<p>Thank you for your recent order! You've purchased:</p><ul>{{products}}</ul>"
+    },
+    {
+      "name": "Summer Sales",
+      "description": "Summer Sale promotion 10% off ",
+      "content": "<p>Dear {{customer.firstname}} {{customer.lastname}},</p>\\n\\n<p>Thank you for your recent order! You've purchased:</p>\\n\\n<ul>\\n    {% for product in customer.last_order.products %}\\n    <li>\\n        <strong>{{product.product_name}}</strong><br>\\n        {{product.product_desc}}\\n    </li>\\n    {% endfor %}\\n</ul>",
+      "id": 4
+    }
+  ],
+  "customers": [
+    {
+      "id": "2a945d4ed020",
+      "firstname": "Joleen",
+      "lastname": "Koba",
+      "email": "jkoba0@hugedomains.com",
+      "last_order": {
+        "id": "cc04e0ec7d75",
+        "products": [
+          {
+            "product_id": "c1b6933744cb",
+            "product_name": "Tea - Darjeeling, Azzura",
+            "product_desc": "Integer a nibh."
+          },
+          {
+            "product_id": "7b833a33f745",
+            "product_name": "Aspic - Amber",
+            "product_desc": "Duis mattis egestas metus. Aenean fermentum."
+          }
+        ],
+        "timestamp": "09/13/2008 08:09 PM"
+      }
+    },
+    {
+      "id": "1cd5588e3266",
+      "firstname": "Jackelyn",
+      "lastname": "Hulburd",
+      "email": "jhulburd2r@weebly.com"
+    },
+    {
+      "id": "7efa4432bfe4",
+      "firstname": "Akim",
+      "lastname": "Arckoll",
+      "email": "aarckoll1@hostgator.com",
+      "last_order": {
+        "id": "87ff67a4622c",
+        "products": [
+          {
+            "product_id": "713f50f9da5f",
+            "product_name": "Higashimaru Usukuchi Soy",
+            "product_desc": "In congue. Etiam justo."
+          },
+          {
+            "product_id": "8a9e3982ca6b",
+            "product_name": "Doilies - 12, Paper",
+            "product_desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+          },
+          {
+            "product_id": "26de01b5cfbe",
+            "product_name": "Duck - Breast",
+            "product_desc": "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+          },
+          {
+            "product_id": "91d8b53a46cf",
+            "product_name": "Rappini - Andy Boy",
+            "product_desc": "Sed ante. Vivamus tortor."
+          }
+        ],
+        "timestamp": "09/20/2008 06:19 PM"
+      }
+    },
+    {
+      "id": "ccb30a3261ce",
+      "firstname": "Alard",
+      "lastname": "Dawidowitz",
+      "email": "adawidowitz2@tripod.com"
+    },
+    {
+      "id": "b3c8a1340333",
+      "firstname": "Keri",
+      "lastname": "Munehay",
+      "email": "kmunehay3@jugem.jp"
+    },
+    {
+      "id": "f4e31c5ecf36",
+      "firstname": "",
+      "lastname": "Pettko",
+      "email": "hpettko4@umich.edu"
+    },
+    {
+      "id": "6486d9fe08e3",
+      "firstname": "Stan",
+      "lastname": "Ternault",
+      "email": "sternault5@ox.ac.uk"
+    },
+    {
+      "id": "a778e7381918",
+      "firstname": "Jacquenette",
+      "lastname": "Scanlan",
+      "email": "jscanlan6@hugedomains.com"
+    },
+    {
+      "id": "2e43a143ef6b",
+      "firstname": "Karoly",
+      "lastname": "Nozzolinii",
+      "email": "knozzolinii7@squidoo.com"
+    },
+    {
+      "id": "5b5b978dd43d",
+      "lastname": "Bugdale",
+      "email": "hbugdale8@unesco.org"
+    },
+    {
+      "id": "c61f16b09260",
+      "firstname": "Yale",
+      "email": "ypoulgreen9@nydailynews.com",
+      "last_order": {
+        "id": "333ddc74958d",
+        "products": [
+          {
+            "product_id": "d665ee83d1d0",
+            "product_name": "Poppy Seed",
+            "product_desc": "Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat."
+          },
+          {
+            "product_id": "d198b3bc87af",
+            "product_name": "Pasta - Fusili, Dry",
+            "product_desc": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat."
+          }
+        ],
+        "timestamp": "05/10/2008 01:40 PM"
+      }
+    },
+    {
+      "id": "376eee18ec0a",
+      "firstname": "Yoshiko",
+      "lastname": "Hill",
+      "email": "yhill2p@vistaprint.com"
+    },
+    {
+      "id": "c594749c588a",
+      "firstname": "Vida",
+      "lastname": "Gomm",
+      "email": "vgomm2q@arizona.edu"
+    }
+  ]
+}
